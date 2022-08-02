@@ -1,0 +1,97 @@
+@import '~@angular/material/theming';
+
+@include mat-core();
+
+
+$niss-primary:(
+    50 : #f6fbfb,
+    100 : #e8f5f4,
+    200 : #d9efed,
+    300 : #c9e9e6,
+    400 : #bee4e0,
+    500 : #b2dfdb,
+    600 : #abdbd7,
+    700 : #a2d7d2,
+    800 : #99d2cd,
+    900 : #8acac4,
+    A100 : #ffffff,
+    A200 : #ffffff,
+    A400 : #f6fffe,
+    A700 : #dcfffc,
+    contrast: (
+        50 : #000000,
+        100 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #000000,
+        900 : #000000,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+)
+);
+
+$niss-accent: (
+    50 : #fffaed,
+    100 : #fff4d1,
+    200 : #ffecb3,
+    300 : #ffe494,
+    400 : #ffdf7d,
+    500 : #ffd966,
+    600 : #ffd55e,
+    700 : #ffcf53,
+    800 : #ffca49,
+    900 : #ffc038,
+    A100 : #ffffff,
+    A200 : #ffffff,
+    A400 : #fff5e1,
+    A700 : #ffedc8,
+    contrast: (
+        50 : #000000,
+        200 : #000000,
+        300 : #000000,
+        400 : #000000,
+        500 : #000000,
+        600 : #000000,
+        700 : #000000,
+        800 : #000000,
+        900 : #000000,
+        A100 : #000000,
+        A200 : #000000,
+        A400 : #000000,
+        A700 : #000000,
+    )
+);
+
+
+
+$nisshotel-primary: mat-palette($niss-primary , 700, 300 , 900);
+$nisshotel-accent:  mat-palette($niss-accent, 100 , 400 , 700);
+
+
+$nisshotel-warn:    mat-palette($mat-red);
+
+
+$nisshotel: mat-light-theme($nisshotel-primary, $nisshotel-accent, $nisshotel-warn);
+
+
+@include angular-material-theme($nisshotel);
+
+//All my styles will be there
+
+
+
+.mat-list-option:hover,
+.mat-list-option:focus,
+.mat-nav-list .mat-list-item:hover, 
+.mat-nav-list .mat-list-item:focus, 
+.mat-action-list .mat-list-item:hover, 
+.mat-action-list .mat-list-item:focus {
+    background-color: mat-color($nisshotel-primary, 200);
+    color: mat-color($nisshotel-primary, 900);
+}
