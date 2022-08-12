@@ -1,0 +1,27 @@
+.container{
+    height: 100vh;
+   background: url(/assets/images/hotel4.jpeg) no-repeat;
+   background-size:  100% 100%;
+
+}
+
+.book-now-container{
+    padding: 35px 115px;
+
+}
+
+.book-now-button{
+    width: 170px;
+    color:white;
+    border: 1px solid white;
+    text-transform: uppercase;
+    border-radius: 4;
+}
+
+.mat-headline{
+    size: 4in;
+}
+
+.header-container{
+    height: 100vh;
+}

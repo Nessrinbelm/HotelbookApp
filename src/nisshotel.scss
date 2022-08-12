@@ -70,21 +70,23 @@ $niss-accent: (
 
 
 
+
 $nisshotel-primary: mat-palette($niss-primary , 700, 300 , 900);
 $nisshotel-accent:  mat-palette($niss-accent, 100 , 400 , 700);
 
 
-$nisshotel-warn:    mat-palette($mat-red);
+$nisshotel-warn: mat-palette($mat-red);
 
 
 $nisshotel: mat-light-theme($nisshotel-primary, $nisshotel-accent, $nisshotel-warn);
 
 
+//@import'.\app\navigation\navtabs\navtabs.component-theme.scss';
+
 @include angular-material-theme($nisshotel);
 
-//All my styles will be there
-
-
+//Navtabs components scss file 
+//@include navtabs-component-theme($nisshotel);
 
 .mat-list-option:hover,
 .mat-list-option:focus,
@@ -95,3 +97,10 @@ $nisshotel: mat-light-theme($nisshotel-primary, $nisshotel-accent, $nisshotel-wa
     background-color: mat-color($nisshotel-primary, 200);
     color: mat-color($nisshotel-primary, 900);
 }
+
+.navtabs-container{
+    background-color: mat-color($nisshotel-primary, lighter);
+    padding-left: 3in;
+
+    
+     }

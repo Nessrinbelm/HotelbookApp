@@ -4,9 +4,11 @@
 
     $primary:map-get($nisshotel, primary );
     $accent:map-get($nisshotel, accent );
+    //Put all theming here
     
  .navtabs-container{
    background-color: mat-color($nisshotel-primary, lighter);
+   
     }
     
 }
