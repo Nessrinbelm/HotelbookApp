@@ -1,3 +1,8 @@
 .sidenav-list span {
     padding-left: 8px;
+    
+}
+
+.sidenav-list a{
+    font-size: 16px;
 }
