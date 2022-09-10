@@ -1,4 +1,5 @@
 import { Component, OnInit , EventEmitter,Output } from '@angular/core';
+import { AuthentificationService } from 'src/app/services/authentification.service';
 
 @Component({
   selector: 'app-header',
@@ -9,7 +10,7 @@ export class HeaderComponent implements OnInit {
 
   @Output() SideNavigationToggle = new EventEmitter();
 
-  constructor() { }
+  constructor( public authService : AuthentificationService) { }
 
   ngOnInit(): void {
   }

@@ -1,7 +1,8 @@
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
 <div class="navtabs-container">
 
     <nav mat-tab-nav-bar fxFlex fxLayout fxLayoutAlign="center center">
-        <a mat-tab-link routerLink="/"
+        <a mat-tab-link routerLink="/Home"
         routerLinkActive #home="routerLinkActive"
         [active]="home.isActive">
        Home
@@ -37,6 +38,19 @@
         [active]="offers.isActive">
            Offers 
         </a>
+
+        
+
+    
+
+        
     </nav>
+    <div class="user" #user *ngIf="Authenticated" >
+      <a class="nav-link" *ngIf="Authenticated" > {{authService.authenticatedUser!.username}}</a>
+        
+      <a class="btn nav-link" *ngIf="Authenticated"  (click)="handleLogout()" > 
+        <i class="bi bi-box-arrow-left" *ngIf="Authenticated"></i>
+      </a>
+    </div>
     
 </div>

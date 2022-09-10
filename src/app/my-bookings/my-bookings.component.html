@@ -1,0 +1,23 @@
+
+<div class="container">
+    <br>
+    <div class="panel panel-primary">
+        <div class="panel-heading"> Bookings List</div>
+        <div class="panel-body">
+            <button class="btn btn-primary" (click)="onGetBookings()"> My Bookings</button>
+        </div>
+        <div class="panel-body">
+            <table *ngIf="bookings" class="table table-striped">
+                <tr>
+                    <th scope="col">Code Réservation </th><th scope="col">Date Résérvation</th><th scope="col">Status</th>
+                </tr>
+                <tr *ngFor="let b of bookings._embedded.bookings">
+                    <td>{{b.id}}</td>
+                    <td>{{b.datereservation}}</td>
+                    <td>{{b.status}}</td>
+                </tr>
+            </table>
+        </div>
+        
+    </div>
+</div>

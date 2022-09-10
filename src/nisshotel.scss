@@ -17,7 +17,7 @@ $niss-primary:(
     A100 : #ffffff,
     A200 : #ffffff,
     A400 : #f6fffe,
-    A700 : #dcfffc,
+    A700 : #30c0b4,
     contrast: (
         50 : #000000,
         100 : #000000,
@@ -101,6 +101,6 @@ $nisshotel: mat-light-theme($nisshotel-primary, $nisshotel-accent, $nisshotel-wa
 .navtabs-container{
     background-color: mat-color($nisshotel-primary, lighter);
     padding-left: 3in;
-
+    
     
      }

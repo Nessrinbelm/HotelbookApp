@@ -7,6 +7,9 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatListModule} from '@angular/material/list';
 import {MatTabsModule} from '@angular/material/tabs';
 import {MatCardModule} from '@angular/material/card';
+import { FormGroup } from '@angular/forms';
+import { FormControl } from '@angular/forms';
+import { FormControlName } from '@angular/forms';
 
 
 @NgModule({
@@ -18,7 +21,8 @@ import {MatCardModule} from '@angular/material/card';
      MatIconModule,
      MatListModule,
      MatTabsModule,
-     MatCardModule
+     MatCardModule,
+     
      
     ],
 

@@ -1,3 +1,4 @@
+import { HttpClient, HttpClientModule } from '@angular/common/http';
 import { Component, OnInit , EventEmitter,Output } from '@angular/core';
 
 @Component({
@@ -6,10 +7,10 @@ import { Component, OnInit , EventEmitter,Output } from '@angular/core';
   styleUrls: ['./sidenav-list.component.css']
 })
 export class SidenavListComponent implements OnInit {
-
+  
   @Output() closeSideNavigation= new EventEmitter();
 
-  constructor() { }
+  constructor(private httpClient:HttpClient) { }
 
   ngOnInit(): void {
   }
@@ -17,5 +18,6 @@ export class SidenavListComponent implements OnInit {
   onToggleClose(){
     this.closeSideNavigation.emit();
   }
+
 
 }

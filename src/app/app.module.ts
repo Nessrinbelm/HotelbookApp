@@ -1,8 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { FlexLayoutModule } from '@angular/flex-layout';
-
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
@@ -29,6 +27,19 @@ import { HomeComponent } from './home/home.component';
 import { HeaderComponent } from './navigation/header/header.component';
 import { SidenavListComponent } from './navigation/sidenav-list/sidenav-list.component';
 import { NavtabsComponent } from './navigation/navtabs/navtabs.component';
+import { UserComponent } from './Users/user/user.component';
+import { BookingsComponent } from './bookings/bookings.component';
+import { MyBookingsComponent } from './my-bookings/my-bookings.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule } from '@angular/forms';
+import { AdminTemplateComponent } from './admin-template/admin-template.component';
+import { FormsModule } from '@angular/forms';
+import { UserService } from './services/user.service';
+import { AddServiceService } from './services/add-service.service';
+import { SuccespageComponent } from './succespage/succespage.component';
+import { ChooseComponent } from './choose/choose.component';
+import { CelebrationbookingComponent } from './celebrationbooking/celebrationbooking.component';
+
 
 
 
@@ -56,7 +67,15 @@ import { NavtabsComponent } from './navigation/navtabs/navtabs.component';
     HomeComponent,
     HeaderComponent,
     SidenavListComponent,
-    NavtabsComponent
+    NavtabsComponent,
+    UserComponent,
+    BookingsComponent,
+    MyBookingsComponent,
+    AdminTemplateComponent,
+    SuccespageComponent,
+    ChooseComponent,
+    CelebrationbookingComponent,
+    
   ],
   imports: [
     BrowserModule,
@@ -64,9 +83,14 @@ import { NavtabsComponent } from './navigation/navtabs/navtabs.component';
     BrowserAnimationsModule,
     MaterialModule,
     AppRoutingModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    HttpClientModule,
+    ReactiveFormsModule,
+    FormsModule
+  
+  
   ],
-  providers: [],
+  providers: [AddServiceService,UserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

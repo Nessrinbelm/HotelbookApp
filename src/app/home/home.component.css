@@ -61,7 +61,9 @@
     
 }
 
-
+.home-section{
+     padding-top: 80px;
+}
 
 .home-section p{
     text-align: center;
@@ -155,9 +157,6 @@
     .morocco h3{
         display: none;
     }
-    .home-section{
-        padding-top: 80px;
-   }
 }
 
 

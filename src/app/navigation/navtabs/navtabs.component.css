@@ -2,3 +2,6 @@
     flex: 1 0.5 auto;
 }
 
+.user{
+    align-items: flex-end;
+}

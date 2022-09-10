@@ -1,0 +1,38 @@
+.container{
+
+  
+      }
+
+     
+      
+     .vertical-center {
+        align-items: center;
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        padding-left:3in;
+        padding-top: 2in;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        font-size: 20px;
+        
+        
+      }
+      .vertical-center.submit-btn{
+        width: 100px;
+        font-size: 40px;
+        
+      }
+
+      button{
+        font-size: 30px;
+        box-shadow: 0px 0px 2px 2px orange;
+        border-radius:50px;
+        
+        
+      }
+
+      mat-card{
+        width: 14in;
+        height: 5in;
+        background-color:darkturquoise;      }
